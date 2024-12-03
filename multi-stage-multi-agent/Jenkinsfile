@@ -13,16 +13,7 @@ pipeline {
       agent {
         docker { image 'node:16-alpine' }
       }
-      steps {
-        sh 'node --install'
-        stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello, World!'
             }
-        }
-    }
-      }
     }
   }
 }
